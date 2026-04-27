@@ -31,11 +31,10 @@ int sort(int* arr, int arr_size){
 }
 
 float mediangenap(int* arr, int arr_size){
-    float hasil;
+    float hasil = 0;
     int n = arr_size;
-
-    hasil = (arr[n/2]+ arr[(n/2) + 1])/2 ;
-
+    int x = arr[(n/2) -1 ]; int y = arr[(n/2)];
+    hasil = (x + y)/2 ;
     return hasil;
 }
 
@@ -67,16 +66,16 @@ int main(){
 
     printf("COUNT %d",count(arr, arr_size) );
     printf(" SORTED "); sort(arr, arr_size);
+    int  n = arr_size;
     for (int j = 0; j< arr_size; j++){
         printf("%d ", arr[j]);
     }
     if (arr_size % 2 == 0){
-        printf("MEDIAN %.2f", mediangenap(arr, arr_size));
+        printf("MEDIAN %.2f", mediangenap(arr, n));
     }
     if (arr_size % 2 != 0){
-        printf("MEDIAN %d", medianganjil(arr, arr_size));
+        printf("MEDIAN %d", medianganjil(arr, n));
     }
-
 
     free(arr);
 
