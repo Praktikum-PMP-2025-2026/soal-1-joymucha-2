@@ -65,16 +65,16 @@ int main(){
 
     }
 
-    printf("COUNT %d\n",count(arr, arr_size) );
+    printf("COUNT %d ",count(arr, arr_size) );
     printf("SORTED "); sort(arr, arr_size);
     for (int j = 0; j< arr_size; j++){
         printf("%d ", arr[j]);
     }
     if (arr_size % 2 == 0){
-        printf("\nMEDIAN %.2f", mediangenap(arr, arr_size));
+        printf(" MEDIAN %.2f", mediangenap(arr, arr_size));
     }
     if (arr_size % 2 != 0){
-        printf("\nMEDIAN %d", medianganjil(arr, arr_size));
+        printf(" MEDIAN %d", medianganjil(arr, arr_size));
     }
 
 
