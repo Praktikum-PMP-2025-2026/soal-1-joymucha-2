@@ -66,7 +66,7 @@ int main(){
     }
 
     printf("COUNT %d",count(arr, arr_size) );
-    printf("SORTED "); sort(arr, arr_size);
+    printf(" SORTED "); sort(arr, arr_size);
     for (int j = 0; j< arr_size; j++){
         printf("%d ", arr[j]);
     }
