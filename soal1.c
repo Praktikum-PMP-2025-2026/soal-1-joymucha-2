@@ -31,10 +31,10 @@ int sort(int* arr, int arr_size){
 }
 
 float mediangenap(int* arr, int arr_size){
-    float hasil = 0;
+    float hasil;
     int n = arr_size;
     int x = arr[(n/2) -1 ]; int y = arr[(n/2)];
-    hasil = (x + y)/2 ;
+    hasil = (x + y)/2.0 ;
     return hasil;
 }
 
